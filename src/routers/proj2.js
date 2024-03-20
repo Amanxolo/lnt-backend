@@ -1,7 +1,7 @@
 const express = require("express");
 const router = new express.Router();
 
-const predict = require("./connection.js");
+const predict = require("../utils/connection.js");
 
 router.post("/proj1/senti_proj", async function (req, res) {
   predict(req.body)
